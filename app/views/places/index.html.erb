@@ -6,3 +6,5 @@
   </div>
 
 <% end %>
+
+<%= will_paginate @place, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, previous_label: "Older", next_label: "Newer", inner_window:1, outer_window: 0 %>
