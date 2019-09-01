@@ -77,3 +77,5 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
 
 gem "font-awesome-rails"
+
+gem 'devise'
