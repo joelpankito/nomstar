@@ -85,12 +85,9 @@
             <%= f.input :caption %>
             <%= f.input :picture %>
             <%= f.submit "Add photo", class: 'btn btn-primary' %>
+            <%end%>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <%= f.submit 'Post Photo', class: 'btn btn-primary' %>
-             <% end %>
-          </div>
+        
         </div>
       </div>
     </div>
@@ -132,7 +129,7 @@
 <% @place.photos.each do |photo| %>
   <div class="col-12 ">  
     <% if photo.picture.present? %>      
-     <%= image_tag photo.picture.url %>
+     <%= image_tag photo.picture.url, :class => "style_image"%>
     <% end %>
     <br/>
     <%= photo.caption %>
