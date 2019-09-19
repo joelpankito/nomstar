@@ -4,7 +4,7 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-  <div id="map"></div>
+  <div id="map">
 
   <% if @place.latitude.present? && @place.longitude.present? %>
   <script>
@@ -27,7 +27,7 @@
   
 <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&callback=initMap" %>
   <% end %>
-
+</div>
 
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
