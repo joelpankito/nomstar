@@ -53,7 +53,15 @@ def destroy
   if @place.user != current_user
     return render plain: 'Not Allowed', status: :forbidden
   end
-
+  @comment = Comment.where(place_id: @place.id)
+  @comment.each do |comment|
+    comment.destroy
+  end
+  
+  @photo = Photo.where(place_id: @place.id)
+  @photo.each do |photo|
+    photo.destroy
+  end
   @place.destroy
   redirect_to root_path
 end
