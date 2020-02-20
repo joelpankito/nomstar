@@ -13,9 +13,7 @@ Setting up ruby on rails enviroment
 
 ### Installing
 
-Once the ruby on rails enviroment has been set up.
-
-Git clone the repository to your local machine:
+Once the ruby on rails enviroment has been set up git clone, the repository to your local machine:
 
 HTTPS:
 ```
@@ -27,7 +25,7 @@ $ git@github.com:joelpankito/nomster.git
 
 ```
 Next, cd into the repository you cloned and install the necessary dependencies 
-* In other to create your local database run:
+* In order to create your local database run:
 ```
 rake db:create
 ```
@@ -48,7 +46,7 @@ $ rails server -b 0.0.0.0 -p 3000
 
 * [Rails](https://rubyonrails.org/) - web application framework
 
-* [Postgres](https://www.postgresql.org/) - The database engine.
+* [Postgres](https://www.postgresql.org/) - The database engine
 
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap is a free and open-source CSS framework
 
